@@ -1,0 +1,54 @@
+.container {
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.container h3 {
+  text-align: center;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 4px;
+}
+
+.container .flex-container {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.container .flex-container .card img {
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.container .flex-container .card .about p {
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.7rem;
+  margin: 2rem 0;
+}
+
+.container .flex-container .card .signature {
+  margin: 0.5rem 0 4rem 0;
+}
+
+.container .flex-container .card .signature p {
+  color: var(--dark-grayish-blue);
+  margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 720px) {
+  .container .flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .flex-container .card {
+    padding: 0 1rem;
+  }
+}
+/*# sourceMappingURL=Testimonial.module.css.map */

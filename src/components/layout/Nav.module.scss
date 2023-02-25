@@ -1,0 +1,116 @@
+nav {
+	color: var(--white);
+	.navigation {
+		padding: 2rem 2rem 0 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.logo {
+			p {
+				font-size: 24px;
+				font-weight: bold;
+			}
+		}
+		.nav-hamburger {
+			cursor: pointer;
+		}
+	}
+
+	ul {
+		display: none;
+		flex-direction: column;
+		text-align: center;
+		list-style: none;
+		background-color: var(--white);
+		margin: 3rem 2rem 0 2rem;
+		padding: 2rem;
+		li {
+			padding: 1rem;
+			margin: 0.3rem;
+			a {
+				text-decoration: none;
+				color: var(--very-dark-grayish-blue);
+				&:hover {
+					background-color: #70cffd;
+					border-radius: 30px;
+					padding: 1rem 1.2rem;
+				}
+			}
+			&:last-child {
+				a {
+					padding: 1rem;
+					border-radius: 30px;
+					background-color: var(--yellow);
+					&:hover {
+						color: var(--white);
+						background-color: #70cffd;
+						border-radius: 30px;
+						padding: 1rem 1.2rem;
+					}
+				}
+			}
+		}
+	}
+	.show-ul {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.2rem 2rem;
+		.navigation {
+			padding: unset;
+			.nav-hamburger {
+				display: none;
+			}
+		}
+		ul {
+			display: flex;
+			flex-direction: row;
+			margin: unset;
+			padding: unset;
+			background-color: unset;
+			li {
+				padding: 1rem 1.2rem;
+				margin: 0 0.3rem;
+				a {
+					text-decoration: none;
+					color: var(--white);
+					&:hover {
+						background-color: unset;
+						border-radius: unset;
+						padding: unset;
+						color: unset;
+					}
+				}
+				&:hover {
+					background-color: #70cffd;
+					border-radius: 30px;
+				}
+				&:last-child {
+					background-color: var(--white);
+					border-radius: 30px;
+					&:hover {
+						background-color: #70cffd;
+					}
+					a {
+						color: black;
+						padding: unset;
+						border-radius: unset;
+						background-color: unset;
+						&:hover {
+							color: var(--white);
+							background-color: unset;
+							border-radius: unset;
+							padding: unset;
+						}
+					}
+				}
+			}
+		}
+	}
+}

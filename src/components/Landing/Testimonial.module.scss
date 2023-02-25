@@ -1,0 +1,45 @@
+.container {
+	padding: 5rem 2rem 2rem 2rem;
+	h3 {
+		text-align: center;
+		color: var(--dark-grayish-blue);
+		letter-spacing: 4px;
+	}
+	.flex-container {
+		margin-top: 4rem;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		.card {
+			img {
+				height: 5rem;
+				border-radius: 50%;
+			}
+			.about {
+				p {
+					color: var(--very-dark-grayish-blue);
+					line-height: 1.7rem;
+					margin: 2rem 0;
+				}
+			}
+			.signature {
+				margin: 0.5rem 0 4rem 0;
+				p {
+					color: var(--dark-grayish-blue);
+					margin-top: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	.container {
+		.flex-container {
+			flex-direction: row;
+      .card {
+        padding: 0 1rem;
+      }
+		}
+	}
+}

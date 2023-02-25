@@ -1,0 +1,48 @@
+footer {
+  background-color: var(--light-cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem;
+  color: var(--dark-cyan);
+}
+
+footer .logo h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--dark-cyan);
+}
+
+footer ul li a:hover {
+  color: var(--white);
+}
+
+footer .footer-links ul li {
+  padding: 3rem 1.5rem;
+}
+
+footer .social-icons ul li {
+  padding: 2rem 0.8rem;
+}
+/*# sourceMappingURL=Footer.module.css.map */

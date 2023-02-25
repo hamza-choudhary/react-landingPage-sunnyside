@@ -1,0 +1,25 @@
+header {
+  background-image: url("../../assets/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 610px;
+}
+
+header .heading {
+  text-align: center;
+  color: var(--white);
+  padding-top: 4rem;
+  letter-spacing: 10px;
+}
+
+@media only screen and (min-width: 720px) {
+  header {
+    background-image: url("../../assets/images/desktop/image-header.jpg");
+    height: 1050px;
+  }
+  header .heading {
+    padding-top: 9rem;
+  }
+}
+/*# sourceMappingURL=Header.module.css.map */

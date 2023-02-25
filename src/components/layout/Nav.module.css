@@ -1,0 +1,144 @@
+nav {
+  color: var(--white);
+}
+
+nav .navigation {
+  padding: 2rem 2rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .navigation .logo p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .navigation .nav-hamburger {
+  cursor: pointer;
+}
+
+nav ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  list-style: none;
+  background-color: var(--white);
+  margin: 3rem 2rem 0 2rem;
+  padding: 2rem;
+}
+
+nav ul li {
+  padding: 1rem;
+  margin: 0.3rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--very-dark-grayish-blue);
+}
+
+nav ul li a:hover {
+  background-color: #70cffd;
+  border-radius: 30px;
+  padding: 1rem 1.2rem;
+}
+
+nav ul li:last-child a {
+  padding: 1rem;
+  border-radius: 30px;
+  background-color: var(--yellow);
+}
+
+nav ul li:last-child a:hover {
+  color: var(--white);
+  background-color: #70cffd;
+  border-radius: 30px;
+  padding: 1rem 1.2rem;
+}
+
+nav .show-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 720px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.2rem 2rem;
+  }
+  nav .navigation {
+    padding: unset;
+  }
+  nav .navigation .nav-hamburger {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: unset;
+    padding: unset;
+    background-color: unset;
+  }
+  nav ul li {
+    padding: 1rem 1.2rem;
+    margin: 0 0.3rem;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  nav ul li a:hover {
+    background-color: unset;
+    border-radius: unset;
+    padding: unset;
+    color: unset;
+  }
+  nav ul li:hover {
+    background-color: #70cffd;
+    border-radius: 30px;
+  }
+  nav ul li:last-child {
+    background-color: var(--white);
+    border-radius: 30px;
+  }
+  nav ul li:last-child:hover {
+    background-color: #70cffd;
+  }
+  nav ul li:last-child a {
+    color: black;
+    padding: unset;
+    border-radius: unset;
+    background-color: unset;
+  }
+  nav ul li:last-child a:hover {
+    color: var(--white);
+    background-color: unset;
+    border-radius: unset;
+    padding: unset;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */
